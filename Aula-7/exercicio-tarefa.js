@@ -7,23 +7,29 @@ let escola = {
 escola.nome = prompt("Informe o nome da escola: ");
 let qtdTurmas = prompt("Quantas turmas tem na escola "+escola.nome+": ");
 for (let index = 0; index < qtdTurmas; index++) {
-    turma = {
+    let turma = {
         nome : undefined,
         periodo : undefined,
         alunos : []
     }
-    turmas.nome = prompt("Informe o nome da turma "+index+" da escola "+escola.nome+": ");
-    turmas.periodo = prompt("Informe o periodo da turma "+turmas.nome+": ");
+    turma.nome = prompt("Informe o nome da turma "+index+" da escola "+escola.nome+": ");
+    turma.periodo = prompt("Informe o periodo da turma "+turma.nome+": ");
     escola.turmas.push(turma);
 }
 
+for (let index = 0; index <escola.turmas.length; index++) {
+    let qtdAlunos = prompt("Quantos alunos tem na turma "+escola.turmas.nome+": ");
+    for (let index2 = 0; index2 < qtdAlunos; index2++) {
+        let aluno = {
+            nome : undefined,
+            disciplinas : []
+        }
+        aluno.nome = prompt("Informe o nome do aluno "+index2+" da turma "+escola.turmas[index]+": ");
+    }
+}
 console.log(escola);
 
 //-----------------------------------------
-aluno = {
-    nome : undefined,
-    disciplinas : []
-}
 disciplina = {
     nome:  undefined,
     notas : []
