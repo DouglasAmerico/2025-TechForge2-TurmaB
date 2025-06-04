@@ -15,11 +15,14 @@ let playlist = {
       { 
         titulo: "Céu Estrelado", 
         artista: "Noite Serena", 
-        duracao: "5:02" 
+        duracao: "5:02",
+        exemplo : {
+          exemploExemplo : "Deu certo"
+        }
     }
     ],
     publica: true
   };
 
-  console.log("Titulo: "+playlist.musicas[0].titulo+" Duração: "+playlist.musicas[0].duracao);
+  console.log(playlist.musicas[2].exemplo.exemploExemplo);
   
