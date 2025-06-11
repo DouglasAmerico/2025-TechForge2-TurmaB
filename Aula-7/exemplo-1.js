@@ -7,3 +7,5 @@ let postBlog = {
   };
   console.log(postBlog.tags[1]); // Saída: ["viagem", "natureza", "aventura"]
   console.log(postBlog.comentarios); // Saída: []
+
+
